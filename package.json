@@ -1,0 +1,19 @@
+{
+  "name": "functional",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "@types/tape": "^5.8.1",
+    "tape": "^5.9.0"
+  }
+}
