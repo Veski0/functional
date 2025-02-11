@@ -16,6 +16,11 @@ export const isArray: Predicate<unknown> = a => Array.isArray(a)
 export const isFunction: Predicate<unknown> = a => typeof a === 'function'
 export const isUndefined: Predicate<unknown> = a => typeof a === 'undefined'
 export const isNull: Predicate<unknown> = a => a === null
+const AsyncFunction = Object.getPrototypeOf(async () => { }).constructor
+export const isAsyncFn: Predicate<unknown> = candidate => {
+  if (typeof candidate !== 'function') return false
+  return candidate instanceof AsyncFunction
+}
 
 // At least one predicate must be true.
 export const isAnyOf = <T>(

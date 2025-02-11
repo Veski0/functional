@@ -19,6 +19,7 @@ formatted and tested.
   - `isFunction`
   - `isUndefined`
   - `isNull`
+  - `isAsyncFn`
 - **Predicate Combinators**
   - `isAnyOf`
   - `isAllOf`
